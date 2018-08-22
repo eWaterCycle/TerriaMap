@@ -1,9 +1,9 @@
 {
   "homeCamera": {
-    "north": -8,
-    "east": 158,
-    "south": -45,
-    "west": 109
+    "north": 52,
+    "east": 17,
+    "south": 46,
+    "west": 17
   },
   "catalog": [
     {
@@ -12,6 +12,28 @@
       "preserveOrder": true,
       "isOpen": true,
       "items": [
+        {
+          "name": "eWaterCycle Models",
+          "type": "group",
+          "preserveOrder": true,
+          "items": [
+            {
+              "name": "PCR-GLOBWB",
+              "type": "geojson",
+              "url": "datasets/pcrglob-rhine-meuse.geojson"
+            },
+            {
+              "name": "WFLOW",
+              "type": "geojson",
+              "url": "datasets/wflow-rhine.geojson"
+            },
+            {
+              "name": "WALRUS",
+              "type": "geojson",
+              "url": "datasets/walrus-hupsel.geojson"
+            }
+          ]
+        },
         {
           "name": "ABC News Stories",
           "type": "group",
