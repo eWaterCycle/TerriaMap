@@ -13,28 +13,6 @@
       "isOpen": true,
       "items": [
         {
-          "name": "eWaterCycle Models",
-          "type": "group",
-          "preserveOrder": true,
-          "items": [
-            {
-              "name": "PCR-GLOBWB",
-              "type": "geojson",
-              "url": "datasets/pcrglob-rhine-meuse.geojson"
-            },
-            {
-              "name": "WFLOW",
-              "type": "geojson",
-              "url": "datasets/wflow-rhine.geojson"
-            },
-            {
-              "name": "WALRUS",
-              "type": "geojson",
-              "url": "datasets/walrus-hupsel.geojson"
-            }
-          ]
-        },
-        {
           "name": "ABC News Stories",
           "type": "group",
           "preserveOrder": true,

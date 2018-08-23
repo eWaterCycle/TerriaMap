@@ -1,8 +1,7 @@
 {
     /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
     "initializationUrls": [
-        "terria",
-        "test"
+        "ewatercycle"
     ],
     "parameters": {
         "bingMapsKey": "AjTD8Fvzgn9yEdC2_AcJtks10M1A3xsDy7naPo9FCb2sK0iL4eK9GLN83A4ivAKO",
