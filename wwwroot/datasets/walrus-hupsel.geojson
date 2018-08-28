@@ -11,9 +11,24 @@
         {
             "type": "Feature",
             "properties": {
-				"Model": "Walrus",
-				"Type": "BMI",
-				"ParameterSet": "Walrus Hupsel",
+				"model": {
+                    "name": "Walrus",
+                    "runners": [
+						{
+							"type": "grpc4bmi",
+							"container": "ewatercycle/walrus-grpc4bmi"
+						}
+					]
+                },
+				"datafiles": {
+					"format": "svn",
+					"url": "https://github.com/ClaudiaBrauer/WALRUS/trunk/demo/data"
+				},
+				"config": {
+                    "format": "yaml",
+                    "url": "data:text/plain,data: data/PEQ_Hupsel.dat\nparameters:\n  cW: 200\n  cV: 4\n  cG: 5.0e+6\n  cQ: 10\n  cS: 4\n  dG0: 1250\n  cD: 1500\n  aS: 0.01\n  st: loamy_sand\nstart: 367416 # 2011120000\nend: 368904 # 2012020000\nstep: 1\n"
+                },
+                "ParameterSet": "Walrus Hupsel",
 				"Forcing": "Berkel_Stadtlohn",
 				"Start": "2001-01-01",
 				"End": "2010-12-31",
@@ -21,19 +36,7 @@
 					1,
 					1,
 					0
-				],
-				"container": {
-					"type": "docker",
-					"name": "pcrg-grpc4bmi:latest"
-				},
-				"datafiles": {
-					"format": "svn",
-					"url": "https://github.com/UU-Hydro/PCR-GLOBWB_input_example/trunk/RhineMeuse30min"
-				},
-				"config": {
-					"format": "ini",
-					"url": "https://raw.githubusercontent.com/UU-Hydro/PCR-GLOBWB_input_example/master/RhineMeuse30min/ini_and_batch_files/rapid/setup_natural_test.ini"
-				}
+				]
 			},
             "geometry": {
                 "type": "Polygon",

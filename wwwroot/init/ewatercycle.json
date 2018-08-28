@@ -26,7 +26,10 @@
                         {
                             "name": "PCR-GLOBWB",
                             "type": "geojson",
-                            "url": "datasets/pcrglob-rhine-meuse.geojson"
+                            "url": "datasets/pcrglob-rhine-meuse.geojson",
+                            "featureInfoTemplate": {
+                                "template": "<div class='abc'>{{#Model}}{{Model}}&nbsp;<small>({{Type}})</small>{{/Model}}</div>"
+                            }
                         },
                         {
                             "name": "WFLOW",

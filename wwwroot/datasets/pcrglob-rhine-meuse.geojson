@@ -11,20 +11,14 @@
 		{
 			"type": "Feature",
 			"properties": {
-				"Model": "PCR-GLOBWB",
-				"Type": "BMI",
-				"ParameterSet": "RhineMeuse30min",
-				"Forcing": "ERA-Interim",
-				"Start": "2001-01-01",
-				"End": "2010-12-31",
-				"Grid": [
-					17,
-					13,
-					0
-				],
-				"container": {
-					"type": "docker",
-					"name": "pcrg-grpc4bmi:latest"
+				"model": {
+					"name": "PCR-GLOBWB",
+					"runners": [
+						{
+							"type": "grpc4bmi",
+							"container": "ewatercycle/pcrg-grpc4bmi:latest"
+						}
+					]
 				},
 				"datafiles": {
 					"format": "svn",
@@ -33,7 +27,16 @@
 				"config": {
 					"format": "ini",
 					"url": "https://raw.githubusercontent.com/UU-Hydro/PCR-GLOBWB_input_example/master/RhineMeuse30min/ini_and_batch_files/rapid/setup_natural_test.ini"
-				}
+				},
+				"ParameterSet": "RhineMeuse30min",
+				"Forcing": "ERA-Interim",
+				"Start": "2001-01-01",
+				"End": "2010-12-31",
+				"Grid": [
+					17,
+					13,
+					0
+				]
 			},
 			"geometry": {
 				"type": "MultiPolygon",
