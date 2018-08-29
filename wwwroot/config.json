@@ -30,7 +30,7 @@
             // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
             //prodHostRegex: "gov.\\.au$",
             //devHostRegex: "\\b(staging|preview|test|dev)\\.",
-            "enableOnLocalhost": true // If false, don't show this when running on localhost
+            "enableOnLocalhost": false // If false, don't show this when running on localhost
         },
         /*
         "developerAttribution": {
