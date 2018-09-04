@@ -1,0 +1,49 @@
+{
+    "homeCamera": {
+        "west": 2,
+        "south": 54,
+        "east": 13,
+        "north": 46
+    },
+    "initialCamera": {
+        "west": 2,
+        "south": 54,
+        "east": 13,
+        "north": 46
+    },
+    "catalog": [
+        {
+            "name": "eWaterCycle Datasets",
+            "type": "group",
+            "preserveOrder": true,
+            "isOpen": true,
+            "items": [
+                {
+                    "name": "eWaterCycle Models",
+                    "type": "group",
+                    "preserveOrder": true,
+                    "items": [
+                        {
+                            "name": "PCR-GLOBWB",
+                            "type": "geojson",
+                            "url": "datasets/pcrglob-rhine-meuse.geojson",
+                            "featureInfoTemplate": {
+                                "template": "<div>{{model.name}}</div>"
+                            }
+                        },
+                        {
+                            "name": "WFLOW",
+                            "type": "geojson",
+                            "url": "datasets/wflow-rhine.geojson"
+                        },
+                        {
+                            "name": "WALRUS",
+                            "type": "geojson",
+                            "url": "datasets/walrus-hupsel.geojson"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
