@@ -7,12 +7,7 @@
             "properties": {
 				"model": {
                     "name": "wflow",
-                    "runners": [
-                        {
-                            "type": "grpc4bmi",
-                            "container": "ewatercycle/wflow-grpc4bmi:latest"
-                        }
-                    ]
+                    "grpc4bmi_container": "ewatercycle/wflow-grpc4bmi:latest"
                 },
 				"datafiles": {
 					"format": "svn",
@@ -28,9 +23,12 @@
 				"End": "1995-02-28T00:00:00+00:00",
 				"Grid": [
 					187,
-					169,
-					0
-				]
+					169
+                ],
+                "plotting": {
+					"variable": "foobar",
+					"index": [0, 168]
+				}
 			},
             "geometry": {
                 "type": "Polygon",
