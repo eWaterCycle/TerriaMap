@@ -13,12 +13,7 @@
 			"properties": {
 				"model": {
 					"name": "PCR-GLOBWB",
-					"runners": [
-						{
-							"type": "grpc4bmi",
-							"container": "ewatercycle/pcrg-grpc4bmi:latest"
-						}
-					]
+					"grpc4bmi_container": "ewatercycle/pcrg-grpc4bmi:latest"
 				},
 				"datafiles": {
 					"format": "svn",
@@ -32,11 +27,14 @@
 				"Forcing": "ERA-Interim",
 				"Start": "2001-01-01",
 				"End": "2010-12-31",
-				"Grid": [
+				"Resolution": [
 					17,
-					13,
-					0
-				]
+					13
+				],
+				"plotting": {
+					"variable": "foobar",
+					"index": [4, 12]
+				}
 			},
 			"geometry": {
 				"type": "MultiPolygon",
