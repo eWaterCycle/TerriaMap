@@ -29,8 +29,8 @@
 				"End": "2010-12-31",
 				"Resolution": "Scalar",
                 "plotting": {
-					"variable": "foobar",
-					"index": [0]
+					"variable": "Q",
+					"index": 0
 				}
 			},
             "geometry": {

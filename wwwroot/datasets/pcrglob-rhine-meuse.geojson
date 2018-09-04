@@ -32,8 +32,8 @@
 					13
 				],
 				"plotting": {
-					"variable": "foobar",
-					"index": [4, 12]
+					"variable": "discharge",
+					"index": 86
 				}
 			},
 			"geometry": {
@@ -233,6 +233,18 @@
 					]
 				]
 			}
-		}
+		},
+		{
+            "type": "Feature",
+            "properties": {
+                "Name": "Lobith"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.1178, 51.86
+                ]
+            }
+        }
 	]
 }

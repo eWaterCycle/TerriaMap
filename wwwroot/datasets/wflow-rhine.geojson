@@ -26,8 +26,8 @@
 					169
                 ],
                 "plotting": {
-					"variable": "foobar",
-					"index": [0, 168]
+					"variable": "SurfaceRunoff",
+					"index": 4493
 				}
 			},
             "geometry": {
@@ -2827,6 +2827,18 @@
                             52.0726
                         ]
                     ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Lobith"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.1178, 51.86
                 ]
             }
         }
