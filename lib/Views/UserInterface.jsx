@@ -26,7 +26,7 @@ export default function UserInterface(props) {
         <StandardUserInterface {... props} version={version}>
             <Menu>
                 <RelatedMaps viewState={props.viewState} />
-                <MenuItem caption="About" href="about.html" key="about-link"/>
+                <MenuItem caption="JupyterHub" href="https://hub.ewatercycle2-nlesc.surf-hosted.nl" key="jupyterhub-link"/>
             </Menu>
             <Nav>
                 <MeasureTool terria={props.viewState.terria} key="measure-tool"/>
