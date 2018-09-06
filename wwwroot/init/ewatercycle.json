@@ -25,18 +25,41 @@
                     "items": [
                         {
                             "name": "PCR-GLOBWB",
-                            "type": "geojson",
-                            "url": "datasets/pcrglob-rhine-meuse.geojson"
+                            "type": "group",
+                            "items": [
+                                {
+                                    "name": "Rhine Meuse 30 Min.",
+                                    "type": "geojson",
+                                    "url": "datasets/pcrglob-rhine-meuse.geojson"
+                                },
+                                {
+                                    "name": "Global 30 Min.",
+                                    "type": "geojson",
+                                    "url": "datasets/pcrglob-global.geojson"
+                                }
+                            ]
                         },
                         {
                             "name": "WFLOW",
-                            "type": "geojson",
-                            "url": "datasets/wflow-rhine.geojson"
+                            "type": "group",
+                            "items": [
+                                {
+                                    "name": "Rhine 5Min.",
+                                    "type": "geojson",
+                                    "url": "datasets/wflow-rhine.geojson"
+                                }
+                            ]
                         },
                         {
                             "name": "WALRUS",
-                            "type": "geojson",
-                            "url": "datasets/walrus-hupsel.geojson"
+                            "type": "group",
+                            "items": [
+                                {
+                                    "name": "Hupsel Brook",
+                                    "type": "geojson",
+                                    "url": "datasets/walrus-hupsel.geojson"
+                                }
+                            ]
                         }
                     ]
                 }
