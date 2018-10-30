@@ -10,14 +10,14 @@
 					"grpc4bmi_container": "ewatercycle/pcrg-grpc4bmi:latest"
 				},
 				"datafiles": {
-					"format": "svn",
-					"url": "https://github.com/UU-Hydro/PCR-GLOBWB_input_example/trunk/RhineMeuse30min"
+					"format": "tar+symlink",
+					"url": "https://zenodo.org/record/1045339/files/pcrglobwb2_input_version_2017_11_beta_1.tar.gz#pcrglob2_input/global_30min/"
 				},
 				"config": {
 					"format": "ini",
-					"url": "https://raw.githubusercontent.com/UU-Hydro/PCR-GLOBWB_input_example/master/RhineMeuse30min/ini_and_batch_files/rapid/setup_natural_test.ini"
+					"url": "https://zenodo.org/record/1045339/files/pcrglobwb2_input_version_2017_11_beta_1.tar.gz#pcrglob2_input/global_30min/iniFileExample/setup_30min_non-natural.ini"
 				},
-				"ParameterSet": "RhineMeuse30min",
+				"ParameterSet": "global_30min",
 				"Forcing": "ERA-Interim",
 				"Start": "2001-01-01",
 				"End": "2010-12-31",

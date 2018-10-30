@@ -42,7 +42,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         "brandBarElements": [
             "",
-            "<a target=\"_blank\" href=\"http://www.ewatercycle.nl\"><img src=\"images/eWaterCycle_4_72_transparant.png\" height=\"72\" title=\"Version: {{version}}\" /></a>",
+            "<img src=\"images/eWaterCycle_4_72_transparant.png\" height=\"72\" title=\"Version: {{version}}\" /><p style=\"font-size: 40px; color: #08abd5; font-style: normal; text-decoration: none; position: relative; top: -100px; left: 60px;\">eWaterCycle</p>",
             ""
         ],
         "supportEmail": "ewatercycle@esciencecenter.nl",

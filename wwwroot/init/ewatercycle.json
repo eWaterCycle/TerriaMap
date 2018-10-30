@@ -13,67 +13,52 @@
     },
     "catalog": [
         {
-            "name": "eWaterCycle Datasets",
+            "name": "PCR-GLOBWB",
             "type": "group",
-            "preserveOrder": true,
-            "isOpen": true,
             "items": [
                 {
-                    "name": "eWaterCycle Models",
-                    "type": "group",
-                    "preserveOrder": true,
-                    "items": [
-                        {
-                            "name": "PCR-GLOBWB",
-                            "type": "group",
-                            "items": [
-                                {
-                                    "name": "Rhine Meuse 30 Min.",
-                                    "type": "geojson",
-                                    "url": "datasets/pcrglob-rhine-meuse.geojson",
-                                    "style": {
-                                        "fill": "#006837"
-                                    }
-                                },
-                                {
-                                    "name": "Global 30 Min.",
-                                    "type": "geojson",
-                                    "url": "datasets/pcrglob-global.geojson",
-                                    "style": {
-                                        "fill": "#91cf60"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "name": "WFLOW",
-                            "type": "group",
-                            "items": [
-                                {
-                                    "name": "Rhine 5Min.",
-                                    "type": "geojson",
-                                    "url": "datasets/wflow-rhine.geojson",
-                                    "style": {
-                                        "fill": "#fdae61"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "name": "WALRUS",
-                            "type": "group",
-                            "items": [
-                                {
-                                    "name": "Hupsel Brook",
-                                    "type": "geojson",
-                                    "url": "datasets/walrus-hupsel.geojson",
-                                    "style": {
-                                        "fill": "#542788"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
+                    "name": "Rhine Meuse 30 Min.",
+                    "type": "geojson",
+                    "url": "datasets/pcrglob-rhine-meuse.geojson",
+                    "style": {
+                        "fill": "#91cf60"
+                    }
+                },
+                {
+                    "name": "Global 30 Min.",
+                    "type": "geojson",
+                    "url": "datasets/pcrglob-global.geojson",
+                    "style": {
+                        "fill": "#91cf60"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "WFLOW",
+            "type": "group",
+            "items": [
+                {
+                    "name": "Rhine 5Min.",
+                    "type": "geojson",
+                    "url": "datasets/wflow-rhine.geojson",
+                    "style": {
+                        "fill": "#fdae61"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "WALRUS",
+            "type": "group",
+            "items": [
+                {
+                    "name": "Hupsel Brook",
+                    "type": "geojson",
+                    "url": "datasets/walrus-hupsel.geojson",
+                    "style": {
+                        "fill": "#542788"
+                    }
                 }
             ]
         }
