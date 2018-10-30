@@ -33,7 +33,7 @@
 				],
 				"plotting": {
 					"variable": "discharge",
-					"index": 86
+					"index": 76
 				}
 			},
 			"geometry": {
@@ -237,7 +237,7 @@
 		{
             "type": "Feature",
             "properties": {
-                "Name": "Lobith"
+                "name": "Lobith"
             },
             "geometry": {
                 "type": "Point",

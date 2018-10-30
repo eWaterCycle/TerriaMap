@@ -8,6 +8,7 @@
         }
     },
     "features": [
+        { "type": "Feature", "properties": { "name": "Centroid" }, "geometry": { "type": "Point", "coordinates": [ 6.65443600418465, 52.06132311280826 ] } },
         {
             "type": "Feature",
             "properties": {
