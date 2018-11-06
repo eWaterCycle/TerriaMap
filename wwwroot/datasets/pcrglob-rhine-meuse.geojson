@@ -237,7 +237,7 @@
 		{
             "type": "Feature",
             "properties": {
-                "Name": "Lobith"
+                "name": "Lobith"
             },
             "geometry": {
                 "type": "Point",

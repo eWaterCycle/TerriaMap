@@ -158,12 +158,18 @@
                 {
                     "name": "Rhine Meuse 30 Min.",
                     "type": "geojson",
-                    "url": "datasets/pcrglob-rhine-meuse.geojson"
+                    "url": "datasets/pcrglob-rhine-meuse.geojson",
+                    "style": {
+                        "fill": "#91cf60"
+                    }
                 },
                 {
                     "name": "Global 30 Min.",
                     "type": "geojson",
-                    "url": "datasets/pcrglob-global.geojson"
+                    "url": "datasets/pcrglob-global.geojson",
+                    "style": {
+                        "fill": "#91cf60"
+                    }
                 }
             ]
         },
@@ -174,7 +180,10 @@
                 {
                     "name": "Rhine 5Min.",
                     "type": "geojson",
-                    "url": "datasets/wflow-rhine.geojson"
+                    "url": "datasets/wflow-rhine.geojson",
+                    "style": {
+                        "fill": "#fdae61"
+                    }
                 }
             ]
         },
@@ -185,7 +194,10 @@
                 {
                     "name": "Hupsel Brook",
                     "type": "geojson",
-                    "url": "datasets/walrus-hupsel.geojson"
+                    "url": "datasets/walrus-hupsel.geojson",
+                    "style": {
+                        "fill": "#542788"
+                    }
                 }
             ]
         }
