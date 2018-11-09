@@ -4,11 +4,15 @@ import os
 import sys
 import regex
 import numpy as np
+import datetime
+# from functools import filter
 
 # Set vars
 coordsList = []
-# input_name = 'au_riv_15s'
-input_name = 'test'
+coordsDict = {}
+
+input_name = 'au_riv_15s'
+# input_name = 'test'
 input_dir = '/mnt/c/Users/maarten/workspace/TerriaMap/wwwroot/rivers/' + input_name + '/'
 input_file = input_dir + '/' + input_name + '.json'
 
@@ -49,15 +53,16 @@ def getStrahlerAndShreve ( sourceLine, sourceCoords, sIndex, evaluated ):
     firstCoordsOfSource = sourceCoords[0]
         
     # Loop over the lines to see if the last coordinates in that line match the first in ours
-    for l in coordsList:
-        index = l[0]
-        line = l[1]
-        targetCoords = l[2]
-        lastCoordsOfTarget = targetCoords[-1]
+    if tuple(firstCoordsOfSource) in coordsDict:
+        tributaries = coordsDict[tuple(firstCoordsOfSource)]        
 
-        if np.array_equal(lastCoordsOfTarget, firstCoordsOfSource):
+        for t in tributaries:
+            l = coordsList[t-1]
+            line = l[1]
+            coords = l[2]
+
             # If so, we need to calculate the Stream orders of our 'children'
-            strahlerShreve = getStrahlerAndShreve(line, targetCoords, index, evaluated)
+            strahlerShreve = getStrahlerAndShreve(line, coords, t, evaluated)
 
             allTributaries.append(strahlerShreve)
             highestTributaryStrahler = max(highestTributaryStrahler, strahlerShreve[0])
@@ -100,18 +105,29 @@ with open(input_file,'r') as f:
 
         # The coordinates are extracted from the geojson and evaluated into a list 
         coords = regex.search(r'"coordinates":(\[.*\])', l)
-
+        
         if coords:
+            coordsNums = eval(coords.group(1))
+            nums = np.array([coordsNums[0], coordsNums[-1]])
             # the Strahler and Shreve orders are set to default 1 here.
-            coordsList.append([i, l, eval(coords.group(1)), 1, 1])
+            coordsList.append([i, l, nums, 1, 1])
+
+            tup = tuple(coordsNums[-1])
+            
+            if not tup in coordsDict:
+                coordsDict[tup] = [i]
+            else:
+                coordsDict[tup].append(i)
 
 # Open the ouput file so we can write to it
 with open(output_file,'w+') as o:
     # Write geojson prefix
-    print >>o, '{"type":"FeatureCollection", "features": ['
+    o.write('{"type":"FeatureCollection", "features": [')
 
     # We keep a list of evaluated lines for optimization (so we don't evaluate twice)
     evaluated = []
+
+    startTime = datetime.datetime.now().replace(microsecond=0)
 
     # For all input file lines
     for l in coordsList:
@@ -125,14 +141,18 @@ with open(output_file,'w+') as o:
 
             # Print as a status indicator for the process
             print('done ' + str(index) + ' : ' + str(len(coordsList)))
+        
+    endTime = datetime.datetime.now().replace(microsecond=0)
+
+    print ('Time taken: ' + str(endTime-startTime))
 
     # When done, write everything to the ouput file
     for l in coordsList:
         newLine = regex.sub(r'properties":{(.*?)}', r'properties":{\1,"STRAHLER":'+str(l[3])+',"SHREVE":'+str(l[4])+'}', l[1])
              
-        print >>o, newLine
+        o.write(newLine)
 
     # And add a postfix
-    print >>o, ']}'
+    o.write(']}')
 
             
