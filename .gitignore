@@ -21,4 +21,11 @@ privateserverconfig.json
 wwwroot/privateconfig.json
 deploy/packages/
 deploy/work/
+
+.vscode/
 packages/
+bin/input/
+bin/lodded/
+bin/result/
+wwwroot/rivers/
+wwwroot/watersheds/
