@@ -4,6 +4,7 @@ import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable
 import PropTypes from 'prop-types';
 import React from 'react';
 import RelatedMaps from './RelatedMaps';
+import LauncherAuth from './LauncherAuth';
 import SplitPoint from 'terriajs/lib/ReactViews/SplitPoint';
 import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
 import version from '../../version';
@@ -26,6 +27,7 @@ export default function UserInterface(props) {
         <StandardUserInterface {... props} version={version}>
             <Menu>
                 <RelatedMaps viewState={props.viewState} />
+                <LauncherAuth viewState={props.viewState} />
                 <MenuItem caption="JupyterHub" href="https://hub.ewatercycle2-nlesc.surf-hosted.nl" key="jupyterhub-link"/>
             </Menu>
             <Nav>
