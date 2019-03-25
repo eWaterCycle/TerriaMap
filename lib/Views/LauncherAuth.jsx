@@ -69,9 +69,9 @@ class LauncherAuth extends React.Component {
                         onClick={this.logOut}
                         type='button'
                         className="tjs-panel__button tjs-_buttons__btn tjs-_buttons__btn--map"
-                        title='Logout'
+                        title='Logout {this.state.username}'
                     >
-                        <span>Logout</span>
+                        <span>Logout {this.state.username}</span>
                     </button>
                 </div>
             );
