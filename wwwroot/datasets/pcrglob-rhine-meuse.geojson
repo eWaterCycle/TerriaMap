@@ -1,240 +1,242 @@
 {
-	"type": "FeatureCollection",
-	"name": "Rhine-Meuse",
-	"crs": {
-		"type": "name",
-		"properties": {
-			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-		}
-	},
-	"features": [
-		{
-			"type": "Feature",
-			"properties": {
-				"model": {
-					"name": "PCR-GLOBWB",
-					"grpc4bmi_container": "ewatercycle/pcrg-grpc4bmi:latest"
-				},
-				"datafiles": {
-					"format": "svn",
-					"url": "https://github.com/UU-Hydro/PCR-GLOBWB_input_example/trunk/RhineMeuse30min"
-				},
-				"config": {
-					"format": "ini",
-					"url": "https://raw.githubusercontent.com/UU-Hydro/PCR-GLOBWB_input_example/master/RhineMeuse30min/ini_and_batch_files/rapid/setup_natural_test.ini"
-				},
-				"ParameterSet": "RhineMeuse30min",
-				"Forcing": "ERA-Interim",
-				"Start": "2001-01-01",
-				"End": "2010-12-31",
-				"Resolution": [
-					17,
-					13
-				],
-				"plotting": {
-					"variable": "discharge",
-					"index": 144
-				}
-			},
-			"geometry": {
-				"type": "MultiPolygon",
-				"coordinates": [
-					[
-						[
-							[
-								4.0,
-								52.5
-							],
-							[
-								6.0,
-								52.5
-							],
-							[
-								6.0,
-								52.0
-							],
-							[
-								8.0,
-								52.0
-							],
-							[
-								8.0,
-								51.5
-							],
-							[
-								8.5,
-								51.5
-							],
-							[
-								8.5,
-								51.0
-							],
-							[
-								9.0,
-								51.0
-							],
-							[
-								9.0,
-								50.5
-							],
-							[
-								11.5,
-								50.5
-							],
-							[
-								11.5,
-								50.0
-							],
-							[
-								12.0,
-								50.0
-							],
-							[
-								12.0,
-								49.5
-							],
-							[
-								11.5,
-								49.5
-							],
-							[
-								11.0,
-								49.5
-							],
-							[
-								11.0,
-								49.0
-							],
-							[
-								10.5,
-								49.0
-							],
-							[
-								10.5,
-								49.5
-							],
-							[
-								10.0,
-								49.5
-							],
-							[
-								10.0,
-								48.5
-							],
-							[
-								9.5,
-								48.5
-							],
-							[
-								9.0,
-								48.5
-							],
-							[
-								9.0,
-								48.0
-							],
-							[
-								10.0,
-								48.0
-							],
-							[
-								10.0,
-								46.5
-							],
-							[
-								9.5,
-								46.5
-							],
-							[
-								6.5,
-								46.5
-							],
-							[
-								6.5,
-								47.0
-							],
-							[
-								7.0,
-								47.0
-							],
-							[
-								7.0,
-								48.0
-							],
-							[
-								5.5,
-								48.0
-							],
-							[
-								5.5,
-								49.0
-							],
-							[
-								5.0,
-								49.0
-							],
-							[
-								5.0,
-								49.5
-							],
-							[
-								4.5,
-								49.5
-							],
-							[
-								4.5,
-								50.0
-							],
-							[
-								4.0,
-								50.0
-							],
-							[
-								4.0,
-								50.5
-							],
-							[
-								4.5,
-								50.5
-							],
-							[
-								5.0,
-								50.5
-							],
-							[
-								5.0,
-								51.0
-							],
-							[
-								5.5,
-								51.0
-							],
-							[
-								5.5,
-								51.5
-							],
-							[
-								3.5,
-								51.5
-							],
-							[
-								3.5,
-								52.0
-							],
-							[
-								4.0,
-								52.0
-							],
-							[
-								4.0,
-								52.5
-							]
-						]
-					]
-				]
-			}
-		},
-		{
+    "type": "FeatureCollection",
+    "name": "Rhine-Meuse",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "model": {
+                    "name": "PCR-GLOBWB",
+                    "grpc4bmi_container": "ewatercycle/pcrg-grpc4bmi:latest"
+                },
+                "datafiles": {
+                    "format": "svn",
+                    "url": "https://github.com/UU-Hydro/PCR-GLOBWB_input_example/trunk/RhineMeuse30min"
+                },
+                "config": {
+                    "format": "ini",
+                    "url": "https://raw.githubusercontent.com/UU-Hydro/PCR-GLOBWB_input_example/master/RhineMeuse30min/ini_and_batch_files/rapid/setup_natural_test.ini"
+                },
+                "ParameterSet": "RhineMeuse30min",
+                "Forcing": "ERA-Interim",
+                "Start": "2001-01-01",
+                "End": "2010-12-31",
+                "Resolution": [
+                    17,
+                    13
+                ],
+                "assessment": {
+                    "variable": "discharge",
+                    "index": 144,
+                    "source": "grdc",
+                    "station_number": "6335020"
+                }
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                4.0,
+                                52.5
+                            ],
+                            [
+                                6.0,
+                                52.5
+                            ],
+                            [
+                                6.0,
+                                52.0
+                            ],
+                            [
+                                8.0,
+                                52.0
+                            ],
+                            [
+                                8.0,
+                                51.5
+                            ],
+                            [
+                                8.5,
+                                51.5
+                            ],
+                            [
+                                8.5,
+                                51.0
+                            ],
+                            [
+                                9.0,
+                                51.0
+                            ],
+                            [
+                                9.0,
+                                50.5
+                            ],
+                            [
+                                11.5,
+                                50.5
+                            ],
+                            [
+                                11.5,
+                                50.0
+                            ],
+                            [
+                                12.0,
+                                50.0
+                            ],
+                            [
+                                12.0,
+                                49.5
+                            ],
+                            [
+                                11.5,
+                                49.5
+                            ],
+                            [
+                                11.0,
+                                49.5
+                            ],
+                            [
+                                11.0,
+                                49.0
+                            ],
+                            [
+                                10.5,
+                                49.0
+                            ],
+                            [
+                                10.5,
+                                49.5
+                            ],
+                            [
+                                10.0,
+                                49.5
+                            ],
+                            [
+                                10.0,
+                                48.5
+                            ],
+                            [
+                                9.5,
+                                48.5
+                            ],
+                            [
+                                9.0,
+                                48.5
+                            ],
+                            [
+                                9.0,
+                                48.0
+                            ],
+                            [
+                                10.0,
+                                48.0
+                            ],
+                            [
+                                10.0,
+                                46.5
+                            ],
+                            [
+                                9.5,
+                                46.5
+                            ],
+                            [
+                                6.5,
+                                46.5
+                            ],
+                            [
+                                6.5,
+                                47.0
+                            ],
+                            [
+                                7.0,
+                                47.0
+                            ],
+                            [
+                                7.0,
+                                48.0
+                            ],
+                            [
+                                5.5,
+                                48.0
+                            ],
+                            [
+                                5.5,
+                                49.0
+                            ],
+                            [
+                                5.0,
+                                49.0
+                            ],
+                            [
+                                5.0,
+                                49.5
+                            ],
+                            [
+                                4.5,
+                                49.5
+                            ],
+                            [
+                                4.5,
+                                50.0
+                            ],
+                            [
+                                4.0,
+                                50.0
+                            ],
+                            [
+                                4.0,
+                                50.5
+                            ],
+                            [
+                                4.5,
+                                50.5
+                            ],
+                            [
+                                5.0,
+                                50.5
+                            ],
+                            [
+                                5.0,
+                                51.0
+                            ],
+                            [
+                                5.5,
+                                51.0
+                            ],
+                            [
+                                5.5,
+                                51.5
+                            ],
+                            [
+                                3.5,
+                                51.5
+                            ],
+                            [
+                                3.5,
+                                52.0
+                            ],
+                            [
+                                4.0,
+                                52.0
+                            ],
+                            [
+                                4.0,
+                                52.5
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
             "type": "Feature",
             "properties": {
                 "name": "Lobith"
@@ -246,5 +248,5 @@
                 ]
             }
         }
-	]
+    ]
 }

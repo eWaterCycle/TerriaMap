@@ -12,28 +12,30 @@
         {
             "type": "Feature",
             "properties": {
-				"model": {
+                "model": {
                     "name": "Walrus",
                     "grpc4bmi_container": "ewatercycle/walrus-grpc4bmi"
                 },
-				"datafiles": {
-					"format": "svn",
-					"url": "https://github.com/ClaudiaBrauer/WALRUS/trunk/demo/data"
-				},
-				"config": {
+                "datafiles": {
+                    "format": "svn",
+                    "url": "https://github.com/ClaudiaBrauer/WALRUS/trunk/demo/data"
+                },
+                "config": {
                     "format": "yaml",
                     "url": "data:text/plain,data: data/PEQ_Hupsel.dat\\nparameters:\\n  cW: 200\\n  cV: 4\\n  cG: 5.0e+6\\n  cQ: 10\\n  cS: 4\\n  dG0: 1250\\n  cD: 1500\\n  aS: 0.01\\n  st: loamy_sand\\nstart: 367416 # 2011120000\\nend: 368904 # 2012020000\\nstep: 1\\ncentroid:\\n  lon: 6.65443600418465\\n  lat: 52.06132311280826\\n"
                 },
                 "ParameterSet": "Walrus Hupsel",
-				"Forcing": "Berkel_Stadtlohn",
-				"Start": "2001-01-01",
-				"End": "2010-12-31",
-				"Resolution": "Scalar",
-                "plotting": {
-					"variable": "Q",
-					"index": 0
-				}
-			},
+                "Forcing": "Berkel_Stadtlohn",
+                "Start": "2001-01-01",
+                "End": "2010-12-31",
+                "Resolution": "Scalar",
+                "assessment": {
+                    "variable": "Q",
+                    "index": 0,
+                    "source": "grdc",
+                    "station_number": "6335020"
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
