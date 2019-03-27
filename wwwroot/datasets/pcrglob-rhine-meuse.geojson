@@ -35,7 +35,7 @@
                     "variable": "discharge",
                     "index": 144,
                     "source": "grdc",
-                    "station_number": "6335020"
+                    "station_id": "6335020"
                 }
             },
             "geometry": {

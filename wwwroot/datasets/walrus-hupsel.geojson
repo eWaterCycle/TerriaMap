@@ -33,7 +33,7 @@
                     "variable": "Q",
                     "index": 0,
                     "source": "grdc",
-                    "station_number": "6335020"
+                    "station_id": "6335020"
                 }
             },
             "geometry": {
