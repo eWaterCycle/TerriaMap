@@ -86,7 +86,7 @@ class LauncherAuth extends React.Component {
                 <div className={classNames(PanelStyles.header)}>
                     <label className={PanelStyles.heading}>Login to start experiments</label>
                 </div>
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <label>
                         Username
                     <input className="tjs-_form__field tjs-_form__input" type="text" value={this.state.username} onChange={this.onUsernameChange}></input>
@@ -95,7 +95,7 @@ class LauncherAuth extends React.Component {
                         Password
                     <input className="tjs-_form__field tjs-_form__input" type="password" value={this.state.password} onChange={this.onPasswordChange}></input>
                     </label>
-                    <button className="tjs-_buttons__btn tjs-_buttons__btn-primary" type="submit" onClick={this.onSubmit}>Login</button>
+                    <button className="tjs-_buttons__btn tjs-_buttons__btn-primary" type="submit">Login</button>
                 </form>
             </MenuPanel>
         );
