@@ -25,7 +25,7 @@
                     187,
                     169
                 ],
-                "plotting": {
+                "assessment": {
                     "variable": "SurfaceRunoff",
                     "index": 8481,
                     "source": "grdc",
