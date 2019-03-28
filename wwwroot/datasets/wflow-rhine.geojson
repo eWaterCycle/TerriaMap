@@ -5,31 +5,33 @@
         {
             "type": "Feature",
             "properties": {
-				"model": {
+                "model": {
                     "name": "wflow",
                     "grpc4bmi_container": "ewatercycle/wflow-grpc4bmi:latest"
                 },
-				"datafiles": {
-					"format": "svn",
-					"url": "https://github.com/openstreams/wflow/trunk/examples/wflow_rhine_sbm"
-				},
-				"config": {
-					"format": "ini",
-					"url": "https://github.com/openstreams/wflow/raw/master/examples/wflow_rhine_sbm/wflow_sbm.ini"
+                "datafiles": {
+                    "format": "svn",
+                    "url": "https://github.com/openstreams/wflow/trunk/examples/wflow_rhine_sbm"
+                },
+                "config": {
+                    "format": "ini",
+                    "url": "https://github.com/openstreams/wflow/raw/master/examples/wflow_rhine_sbm/wflow_sbm.ini"
                 },
                 "ParameterSet": "Wflow Rhine SBM",
-				"Forcing": "ERA-Interim",
-				"Start": "1995-01-31T00:00:00+00:00",
-				"End": "1995-02-28T00:00:00+00:00",
-				"Grid": [
-					187,
-					169
+                "Forcing": "ERA-Interim",
+                "Start": "1995-01-31T00:00:00+00:00",
+                "End": "1995-02-28T00:00:00+00:00",
+                "Grid": [
+                    187,
+                    169
                 ],
-                "plotting": {
-					"variable": "SurfaceRunoff",
-					"index": 8481
-				}
-			},
+                "assessment": {
+                    "variable": "SurfaceRunoff",
+                    "index": 8481,
+                    "source": "grdc",
+                    "station_id": "6335020"
+                }
+            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
